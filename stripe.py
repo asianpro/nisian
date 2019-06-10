@@ -58,7 +58,7 @@ class StripeChecker():
         proxy_pool = cycle(proxy_lists)
         Username = str("AsianPro")
         zipcode = str(input(fg[2] + '[*]' + reset + "ZipCode: "))
-        proxyused = str(input(fg[5] + '[?]' + reset + ' Use Proxy?[y/n] '))
+        proxyused = str("n")
         isproxyused = False
 
         if proxyused.lower() == "y":
