@@ -154,16 +154,16 @@ class StripeChecker():
                 error_msg = error.find('div', {'class': 'form_errors'}).get_text()
 
                 if error_msg == "Your card's security code is incorrect.":
-                    print(fg[1] + "AsianPro[ " + credit_card + " ]──(" + str(credit_entry) + ")")
+                    print(fg[1] + "AsianPro[ " + credit_card + " ]---(" + str(credit_entry) + ")")
                     print(fg[1] + "|----------- LIVE! ~> But Incorrect CVV (Good on Amazon)")
 
                 else:
-                    print(fg[0] + "AsianPro[ " + credit_card + " ]──(" + str(credit_entry) + ")")
+                    print(fg[0] + "AsianPro[ " + credit_card + " ]---(" + str(credit_entry) + ")")
                     print(fg[0] + "|----------- " + reset + "DEAD >>> Reason: " + str(error_msg))
 
             except Exception as e:
                 print(e)
-                print(fg[1] + "AsianPro[ " + credit_card + " ]──(" + str(credit_entry) + ")")
+                print(fg[1] + "AsianPro[ " + credit_card + " ]---(" + str(credit_entry) + ")")
                 print(fg[1] + "|----------- LIVE!")
         print()
         print(fg[3] + "[*]" + reset + " Checking Done! " + str(len(cc_list)))
