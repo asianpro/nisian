@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
 from itertools import cycle
 import requests
@@ -56,8 +55,8 @@ class StripeChecker():
                 proxy_lists.append(x)
 
         proxy_pool = cycle(proxy_lists)
-        Username = str(input(fg[2] + '[*]' + reset + ' Enter Full Name: '))
-        zipcode = str(input(fg[2] + '[*]' + reset + "Enter CC's ZipCode: "))
+        Username = str("AsianPro")
+        zipcode = str(input(fg[2] + '[*]' + reset + "ZipCode: "))
         proxyused = str(input(fg[5] + '[?]' + reset + ' Use Proxy?[y/n] '))
         isproxyused = False
 
